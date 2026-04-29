@@ -1,4 +1,4 @@
-const TARGET_BASE = (Netlify.env.get("TARGET_DOMAIN") || "").replace(/\/$/, "");
+const TARGET_BASE = (Netlify.env.get("TARGET_DOMAIN=https://activemmd.duckdns.org:33163") || "").replace(/\/$/, "");
 
 const STRIP_HEADERS = new Set([
   "host",
